@@ -1,0 +1,9 @@
+<%= form_for :creature, url: update_creature_path(@creature), method: "put" do |f| %>
+	<%= f.text_field :name %>
+	<%= f.text_area :description %>
+	<%= f.submit "Update creature" %>
+	<%= token_tag form_authenticity_token %>
+
+<% end %>
+
+

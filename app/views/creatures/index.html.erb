@@ -1,0 +1,6 @@
+<% @creatures.each do |creature| %>
+  <p> <%= creature.name %> </p>
+  <p> CreatureID: <%= creature.id %></p>
+  <p> <%= creature.description %></p>
+  <%= button_to "Delete", creature, method: :delete %>
+<% end %>
